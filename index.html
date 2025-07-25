@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revathi Electronics Website Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <!--header section star-->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo_new_white.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#footer-sec">About</a></li>
+                     <!-- <li><a href="">Products</a></li> --->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Revathi Electronics Service Centre</h1>
+            <p>We provide the best electronic products and services in the market.</p>
+            <!---<a href="https://uniquesystems.in/#home-sec" class="hero-btn">Visit Us To Know More</a>--->
+        </div>
+
+    </section>
+
+<!---Services-->
+    <section class="services", id="services-sec">
+        <h1>Our Services</h1>
+        <p>We offer a wide range of electronic services to meet your needs.</p>
+
+        <div class="row">
+            <div class="service-col">
+                <img src="images/pic1.jpeg">
+                <h3>Repair Services</h3>
+                <p>Expert repair services for all electronic devices.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/pic2.jpeg">
+                <h3>Installation Services</h3>
+                <p>Professional installation of electronic products.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/technician.jpeg">
+                <h3>Consultation Services</h3>
+                <p>Consultation for electronic product selection and usage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>For inquiries, please reach out to us.</p>
+
+        <div class="row">
+            <div class="contact-col">
+                <img src="images/contact1.jpeg" >
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="10" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </section>   -->
+
+    <!--footer-->
+    <section class="footer" , id="footer-sec">
+        <h4>About Us</h4>
+        <p>We are a leading electronics service provider with years of experience in the industry.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/sajichottanikkara.pk"><i class="fa-brands fa-facebook-f"></i></a>
+            <i class="fa-brands fa-youtube"></i>
+            <a href="https://www.instagram.com/sajichottanikkarapk?utm_source=ig_web_button_share_sheet&igsh=ZzE0dm5lNm54NHFo"><i class="fa-brands fa-instagram"></i></a>
+            <i class="fa-solid fa-location-dot"></i>
+            
+            <!----<a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>--->
+        </div>
+        <p>© 2023 Revathi Electronics. All rights reserved.</p>
+    </section>
+
+
+
+
+
+
+
+   <!-------javascript for menu toggle------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>
