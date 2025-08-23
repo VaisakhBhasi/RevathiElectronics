@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revathi Electronics Website Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <!--header section star-->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_new_white.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#footer-sec">About</a></li>
+                     <!-- <li><a href="">Products</a></li> --->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Services</h1>
+
+    </section>
+
+<!---Services-->
+    <section class="services", id="services-sec">
+        <p>We provide these services.</p>
+
+        <div class="row">
+            <div class="service-col">
+                <img src="images/tv_service1.jpg">
+                <h3>TV Repairs</h3>
+                <p>Expert repair for all types of televisions(CRT,LCD,LED) to restore clear picture and sound.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/monitor.jpeg">
+                <h3>Monitors</h3>
+                <p>Professional servicing to fix display issues and improve screen performance.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/micro.jpeg">
+                <h3>Micro Wave</h3>
+                <p>Quick and reliable solutions for heating and power problems in microwaves.</p>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="service-col">
+                <img src="images/cooker.jpeg">
+                <h3>Induction Cooker</h3>
+                <p>Repair and maintenance for smooth and efficient cooking performance.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/music.jpeg">
+                <h3>Music System</h3>
+                <p>Servicing for Bluetooth, wired speakers, amplifiers, portable stereos, and home theatres.</p> 
+            </div>
+            <div class="service-col">
+                <img src="images/stab.jpeg">
+                <h3>Stabilizer</h3>
+                <p>Ensuring your stabiliser works perfectly to protect your electronics from voltage fluctuations.</p>
+            </div>
+            
+        </div>
+        <div class="row">   
+            <div class="service-col">
+                <img src="images/light.jpeg">
+                <h3>Emergency Light</h3>
+                <p>Restoring brightness and battery life to your emergency lighting.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/ups.jpeg">
+                <h3>Computer UPS</h3>
+                <p>Fixing power backup issues to keep your computer running smoothly.</p> 
+            </div>
+            <div class="service-col">
+                <img src="images/remote.jpeg">
+                <h3>Sales</h3>
+                <p>Wide range of TV remotes, batteries, HDMI/VGA cables, and more.</p> 
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    <!--footer-->
+    <section class="footer" , id="footer-sec">
+        <h4>About Us</h4>
+        <p>We are a leading electronics service provider with years of experience in the industry.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/sajichottanikkara.pk"><i class="fa-brands fa-facebook-f"></i></a>
+            <i class="fa-brands fa-youtube"></i>
+            <a href="https://www.instagram.com/sajichottanikkarapk?utm_source=ig_web_button_share_sheet&igsh=ZzE0dm5lNm54NHFo"><i class="fa-brands fa-instagram"></i></a>
+            <i class="fa-solid fa-location-dot"></i>
+            
+            <!----<a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>--->
+        </div>
+        <p>© 2023 Revathi Electronics. All rights reserved.</p>
+    </section>
+
+
+
+
+
+
+
+   <!-------javascript for menu toggle------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>
